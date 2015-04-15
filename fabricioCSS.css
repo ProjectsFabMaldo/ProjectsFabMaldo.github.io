@@ -1,0 +1,178 @@
+			.fotoMenuPrincipal{
+				//float: right;
+				//position: right;
+				//top:425px;
+				//left: -40px;
+                                margin: 0 auto 0 auto;
+                                //margin-top: 20px;
+                                //margin-left: 200px;
+                                height: 300px;
+                                width: 700px;
+                                /*border-width: 1px;
+                                border-color: black;
+                                border-style: solid;*/
+                                text-align: center;
+                        }
+						
+						.busquedaCompanero_contenido_titulo {
+                            margin:10px;
+                            float: top;
+                            height: 100px;
+                            border-style: solid;
+                            border-color: #000000;
+                            border-width: 1px;
+                            
+                        }
+                        
+                        .busquedaCompanero_contenido_left {
+                            margin: 30px;
+                            float: left;
+                            color: blue;
+                        } 
+                        
+                        .busquedaCompanero_contenido_left_top {
+                            float: top;
+                            height: 100px;
+                        }
+                        
+                        .busquedaCompanero_contenido_left_down {
+                            float: end;
+                            height: 100px;
+                        }
+                        
+                        .busquedaCompanero_contenido_right {
+                            margin-top: 30px;
+                            margin-right: 30px;
+                            float: right;
+                            //color: blue;
+                        }
+                        
+                        .busquedaCompanero_table_model {
+                            border-style: solid;
+                            border-color: #000000;
+                            border-width: 1px;
+                        }
+                        
+                        .asignaturas_contenido_left {
+                            margin: 2.5%;
+                            float: left;
+                            color: blue;
+                            height: 90%;
+                            width: 40%;
+                            /*border-style: solid;
+                            border-color: #000000;
+                            border-width: 1px;*/
+                            
+                        }
+                        
+                        .asignaturas_fotoAsignaturas{
+                            //float: right;
+                            //position: right;
+                            //top:425px;
+                            //left: -40px;
+                            margin: 5%;
+                            //margin-top: 20px;
+                            //margin-left: 200px;
+                            height: 80%;
+                            width: 80%;
+                            /*border-width: 1px;
+                            border-color: black;
+                            border-style: solid;
+                            text-align: center;*/
+                            //vertical-align: central;
+                        }
+                        
+                        .asignaturas_boton_centrar {
+                           margin-left: 30%;
+                           //margin: 0 auto;
+                        }
+                        
+                        .asignaturas_curso_contenido_left {
+                            margin: 2.5%;
+                            float: left;
+                            color: blue;
+                            height: 90%;
+                            width: 26%;
+                            /*border-style: solid;
+                            border-color: #000000;
+                            border-width: 1px;*/
+                            
+                        }
+                        
+                        .asignaturas_curso_fotoAsignaturas{
+                            //float: right;
+                            //position: right;
+                            //top:425px;
+                            //left: -40px;
+                            margin: 5%;
+                            //margin-top: 20px;
+                            //margin-left: 200px;
+                            height: 40%;
+                            width: 80%;
+                            /*border-width: 1px;
+                            border-color: black;
+                            border-style: solid;
+                            text-align: center;*/
+                            //vertical-align: central;
+                        }
+						
+						.asignaturas_primero_contenido_left {
+                            margin-left: 10%;
+							margin-top: 7%;
+                            float: left;
+                            color: blue;
+                            height: 250px;
+                            width: 40%;
+                            border-style: solid;
+                            border-color: #85A3FF;
+                            border-width: 2px;
+							border-right: #ffffff;
+							text-align: left;
+							
+                            
+                        }
+						
+						.asignaturas_primero_contenido_left h5 {
+							text-align: center;
+							font-size: 20px;
+							color: green;
+						}
+						
+						.asignaturas_primero_contenido_right {
+                            margin-left: 0%;
+							margin-top: 7%;
+                            float: left;
+                            color: blue;
+                            height: 250px;
+                            width: 10%;
+                            border-style: solid;
+                            border-color: #85A3FF;
+                            border-width: 2px;
+							border-left: #ffffff;
+                            text-align: center;
+                        }
+						
+						.asignaturas_primero_contenido_right h5 {
+							text-align: center;
+							font-size: 20px;
+							color: green;
+						}
+						
+						.asignaturas_nombre_left {
+                            margin: 5%;
+                            float: left;
+                            color: blue;
+                            height: 250px;
+                            width: 30%;
+                            /*border-style: solid;
+                            border-color: #85A3FF;
+                            border-width: 2px;
+                            text-align: center;*/
+                        }
+						.asignaturas_nombre_left h3{
+							color: green;
+							font-style: italic;
+						}
+            
+            
+	

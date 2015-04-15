@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+	<html>
+	
+		<head>
+			<title>EnterateFDI</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<link id="estilo" rel="stylesheet" type="text/css" href="default.css">
+			<link id="estilo2" rel="stylesheet" type="text/css" href="fabricioCSS.css">
+		</head>
+			<!-- CABECERA MENU -->
+		<body>
+			<div id="contenedor">
+			
+				<div id="cabecera">
+					<h1>enTERAteFDI</h1>
+					</br>
+					<h3>Teras de información</h3>
+					
+					<li class="search">
+						<form action="http://www.google.com/cse" id="cse-search-box" >
+						<input type="hidden" name="cx" value="005699544250117381820:gvga6n-gpyo" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="text" name="q" placeholder="Buscar en la web" />
+						</form>	
+					</li>
+					
+					<li class="login">
+						<form action="" method="post">
+							Nombre de Usuario:
+							<input type="text" name="nombre" value="" />
+							<br/>
+							Contraseña:
+							<input type="password" name="password" value="" />
+							<br/>
+							<input type="submit" value="Aceptar" />
+							<input type="submit" value="Nuevo Usuario" />
+						</form>
+					</li>
+					
+					<ul class="nav">
+						<li><a href="index.html">Inicio</a></li>
+						
+						<li><a href="asignaturas.html">Asignaturas</a>
+							<ul>
+								<li><a href="PorCurso.html">Por curso</a></li>
+								<li><a href="PorNombre.html">Por nombre</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="index.html">Eventos y Noticias</a>
+							<ul>
+								<li><a href="calendarios.html">Calendarios</a></li>
+								<li><a href="competicionesDeportivas.html">Competiciones Deportivas</a></li>
+								<li><a href="Reuniones.html">Reuniones y Asociaciones</a></li>
+								<li><a href="cursosYCharlas.html">Cursos y Charlas</a></li>
+							</ul>
+						</li>
+							
+						<li><a href="index.html">Tablón de Anuncios</a></a>
+							<ul>
+								<li><a href="gestionTransportes.html">Gestión Transportes</a></li>
+								<li><a href="busquedaCompañero.html">Búsqueda Compañeros</a></li>
+								<li><a href="misAnuncios.html">Otros</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="miembros.html">¿Quiénes Somos?</a></li>
+					</ul>
+				
+				</div> 
+				
+				<p class="breadcrumb">
+					<a href="index.html">Inicio</a> >
+						<a href="index.html">Tablon de anuncios</a> >
+							Búsqueda compañeros
+										
+				</p>
+				
+							<div id="contenido">
+                                <div class="busquedaCompanero_contenido_titulo">
+                                    <h2>Búsqueda de compañeros</h2>
+                                    <h4>Registra una solicitud para encontrar compañero y el sistema 
+                                    hará el resto</h4>
+                                </div>
+                                <div class="busquedaCompanero_contenido_left">
+                                    <div class="busquedaCompanero_contenido_left_top">
+                                        <form action="select_asignatura" method="post">
+                                            Escoge una asignatura:<br/> 
+                                            <select name="asignaturas" >
+                                                <option value="tecnologia_programacion" >Tecnología de la programación</option>
+                                                <option value="ingenieria_software">Ingeniería del Software</option>
+                                                <option value="aplicaciones_web">Aplicaciones web</option>
+                                                <option value="software_corporativo">Software corporativo"</option>
+                                                <option value="otras">Otras"</option>
+                                            </select>     
+                                        </form>
+                                    </div>
+                                    <div class="busquedaCompanero_contenido_left_down">
+                                        <form action="select_interés" method="post">
+                                            Escoge un interés:<br /> 
+                                            <select name="interés" >
+                                                <option value="realizar_practicas" >Realizar prácticas</option>
+                                                <option value="ayuda_tutorias">Ayudas y tutorias</option>
+                                                <option value="grupo_estudio">Grupo de estudio</option>
+                                                <option value="proyecto_carrera">Proyecto fin de carrera"</option>
+                                                <option value="otros">Otros"</option>
+                                            </select>     
+                                        </form>
+                                    </div>
+                                    
+                                </div>
+                                <div class="busquedaCompanero_contenido_left">
+                                    Pulsar para continuar<br /> 
+                                    <button type="submit" name="submit_registrocompañero" value="">
+                                        Registrar solicitud
+                                    </button>    
+                                </div>
+                                <div class="busquedaCompanero_contenido_right">
+                                    <table class="busquedaCompanero_table_model"> <!--border="2" --><!--class="table_model" -->
+                                        <caption>Resultado compañeros candidatos</caption>
+                                        <tr>
+                                           <th>Acerca de</th>
+                                           <th>Nick candidato</th>
+                                        </tr>
+                                        <tr>
+                                           <td><a href="acercade_usuario.html">conocer</a></td>
+                                           <td>Juan22</td>
+                                        </tr>
+                                        <tr>
+                                           <td><a href="acercade_usuario.html">conocer</a></td>
+                                           <td>LuisGue</td>
+                                        </tr>
+                                     </table>	
+                                </div>
+                                    
+                            </div>
+				
+				<div id="slidebar-right">
+					<ul class="enlaces">
+						<li><a href="http://www.ucm.es/campusvirtual/">
+							<img src="img/campusVirtual.png"/>
+						</a></li>
+						
+						<li><a href="http://biblioteca.ucm.es/fdi/">
+							<img src="img/biblioteca.png"/>
+						</a></li>
+						
+						<li><a href="https://www.ucm.es/ssii/correo-ucm/">
+							<img src="img/correoUCM.png"/>
+						</a></li>
+						
+						<li><a href="https://geaportal.ucm.es/">
+							<img src="img/GEA-UCMNET.png"/>
+						</a></li>
+					</ul>
+				</div> 
+				<div id="pie">
+				
+				<nav id="pieCentDer">
+					<span class="youtube"> <a href="https://www.youtube.com/user/ucomplutensemadrid"><img alt="rss" src="./img/youtube-icon.png" /></span>
+					<span class="facebook"> <a href="https://www.facebook.com/UniComplutense" ><img alt="facebook" src="./img/facebook-icon.png" /></span>
+					<span class="twitter"> <a href="http://twitter.com/unicomplutense"><img alt="twitter" src="./img/twitter-icon.png"/></span>
+				</nav>
+				
+			</div>
+			</div><!-- fin contenedor-->
+		</body>
+	</html>

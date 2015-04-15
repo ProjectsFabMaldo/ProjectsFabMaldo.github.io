@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+		<meta http-equiv="Content-Type" content="text/html; charset= utf-8" />
+		<link id="estilo" rel="stylesheet" type="text/css" href="default.css">
+		<link id="estilo" rel="stylesheet" type="text/css" href="transportes.css">
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=ISO-8859-1">
+    <title>EnterateFDI</title>
+    <script src=" http://maps.google.com/?file=api&amp;v=2.x&amp;key=ABQIAAAAUnJY3ChJhF0YgyTSDJuVfBTqu-zEVMNfNVaqfAe9FKyfKhfBExSs9LrIQ7GOuBeSnaddg05sRmEBxQ"
+      type="text/javascript"></script>
+    <script type="text/javascript">
+ 
+		var map;
+		var gdir;
+		var geocoder = null;
+		function load() {
+			if (GBrowserIsCompatible()) {
+				map = new GMap2(document.getElementById("map"));	
+				gdir = new GDirections(map, document.getElementById("direcciones"));
+				GEvent.addListener(gdir, "load", onGDirectionsLoad);
+				GEvent.addListener(gdir, "error", mostrarError);	
+				obtenerRuta("Madrid, Spain", "Toledo, Spain");	
+			}
+		}
+			
+		function obtenerRuta(desde, hasta) {
+				//conduccion
+				gdir.load("from: " + desde + " to: " + hasta,
+					{ "locale": "es", "travelMode" : G_TRAVEL_MODE_DRIVING });
+		}
+		
+		function onGDirectionsLoad(){ 
+			//resumen de tiempo y distancia
+			document.getElementById("getDistance").innerHTML =gdir.getSummaryHtml(); 
+		} 
+		
+		function mostrarError(){
+			if (gdir.getStatus().code == G_GEO_UNKNOWN_ADDRESS)
+				alert("No se ha encontrado una ubicación geográfica que se corresponda con la dirección especificada.");
+			else if (gdir.getStatus().code == G_GEO_SERVER_ERROR)
+				alert("No se ha podido procesar correctamente la solicitud de ruta o de códigos geográficos, sin saberse el motivo exacto del fallo.");
+			else if (gdir.getStatus().code == G_GEO_MISSING_QUERY)
+				alert("Falta el parámetro HTTP q o no tiene valor alguno. En las solicitudes de códigos geográficos, esto significa que se ha especificado una dirección vacía");
+			else if (gdir.getStatus().code == G_GEO_BAD_KEY)
+				alert("La clave proporcionada no es v⭩da o no coincide con el dominio para el cual se ha indicado.");
+			else if (gdir.getStatus().code == G_GEO_BAD_REQUEST)
+				alert("No se ha podido analizar correctamente la solicitud de ruta.");
+			else alert("Error desconocido.");
+
+		}
+					
+	</script>
+
+  </head>
+  <body onload="load()">
+  
+		<div id="contenedor">  
+				<div id="cabecera">
+					<h1>enTERAteFDI</h1>
+					</br>
+					<h3>Teras de información</h3>
+					
+					<li class="search">
+						<form action="http://www.google.com/cse" id="cse-search-box" >
+						<input type="hidden" name="cx" value="005699544250117381820:gvga6n-gpyo" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="text" name="q" placeholder="Buscar en la web" />
+						</form>	
+					</li>
+					
+					<li class="login">
+						<form action="" method="post">
+							Nombre de Usuario:
+							<input type="text" name="nombre" value="" />
+							<br/>
+							Contraseña:
+							<input type="password" name="password" value="" />
+							<br/>
+							<input type="submit" value="Aceptar" />
+							<input type="submit" value="Nuevo Usuario" />
+						</form>
+					</li>
+					
+					<ul class="nav">
+						<li><a href="index.html">Inicio</a></li>
+						
+						<li><a href="asignaturas.html">Asignaturas</a>
+							<ul>
+								<li><a href="PorCurso.html">Por curso</a></li>
+								<li><a href="PorNombre.html">Por nombre</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="eventosNoticias.html">Eventos y Noticias</a>
+							<ul>
+								<li><a href="calendarios.html">Calendarios</a></li>
+								<li><a href="competicionesDeportivas.html">Competiciones Deportivas</a></li>
+								<li><a href="Reuniones.html">Reuniones y Asociaciones</a></li>
+								<li><a href="cursosYCharlas.html">Cursos y Charlas</a></li>
+							</ul>
+						</li>
+							
+						<li><a href="index.html">Tablón de Anuncios</a></a>
+							<ul>
+								<li><a href="gestionTransportes.html">Gestión Transportes</a></li>
+								<li><a href="busquedaCompañero.html">Búsqueda Compañeros</a></li>
+								<li><a href="misAnuncios.html">Otros</a></li>
+							</ul>
+						</li>
+						
+						<li><a href="miembros.html">¿Quiénes Somos?</a></li>
+					</ul>
+				
+				</div>  
+
+			<div id="slidebar-right">
+				<!-- El mapa debe recibir los puntos origen y destino del viaje para cargarlo con el viaje correcto,
+					ahora tiene por defecto toledo - ciudad universitaria	-->
+					<h5>Recorrido</h5>
+					<div id="map" ></div>
+			</div>
+			
+			<div id="contenido">
+				<p class="ruta"><br/>
+				<a href="index.html">Inicio</a> >
+				<a href="index.html">Tablón de anuncios</a> > 
+				<a href="gestionTransportes.html">Gestión Transportes</a> >
+				<a class="actual" href="consulta.html">Consulta</a>
+				</p>
+				
+				<h2>Gestión de Transportes - Consulta</h2>
+					
+				<div id="viajeDetallado">
+				<!-- Se deberían cargar todos los datos del anuncio, no tenemos datos almacenados que cargar
+				Ejemplo de struct JavaScript 
+				
+				function makeStruct(names) {
+				
+					var names = names.split(' ');
+					var count = names.length;
+					function constructor() {
+						for (var i = 0; i < count; i++) {
+						this[names[i]] = arguments[i];
+						}
+					}
+				return constructor;
+				}
+
+				var Item = makeStruct("idAnuncio salida horaSalida destino horaRegreso dias plazas idUser");
+				var anuncio = new Item(1 'Toledo', '8:00', 'ciu', '17:00', 'Lunes', 5, LuisGue);
+				alert(anuncio.salida); // displays: john
+				
+				-->
+					<div id="infoViajeDetallado">
+						<div id="viajeDetalladoTop">
+							<p1>
+								Salida: Toledo <!--siguiendo el ejemplo anterior: alert(anuncio.salida);-->
+							</p1>
+							<p2>
+								Hora Salida: 8:00 h
+							</p2>
+						</div>
+						
+						<div id="viajeDetalladoCenter">
+							<p1>
+								Destino: Ciudad universitaria
+							
+							<p2>
+								Hora Regreso: 17:00 h
+							</p2>
+						</div>
+						<div id="viajeDetalladoCenter2">
+							<p1>
+								Periodo: Lunes
+							</p1>
+							<p2>
+								Conductor: User
+							</p2>
+						</div>
+						
+						<div id="viajeDetalladoPie">
+								<pSubrayado>
+									Detalles del viaje
+								</pSubrayado>
+								</br>
+								<div id="detallesViaje">
+									No se puede fumar en el coche
+								</div>
+						</div>
+					</div>
+					<div id="infoViajeDetalladoRight">
+							<div id="plazas">
+								Plazas: 4
+							</div>
+							<div id="botonAbajo">
+								<button type="button"onclick="">Unirse</button> <!-- Comprobar si hay plazas libres,  
+																					decrementPlazas(idAnuncio), ir a otra ventana-->
+							</div>
+						</div>
+				</div>
+			</div>
+			
+			<div id="pie">
+			
+				<nav id="pieCentDer">
+					<span class="youtube"> <a href="https://www.youtube.com/user/ucomplutensemadrid"><img alt="rss" src="./img/youtube-icon.png" /></span>
+					<span class="facebook"> <a href="https://www.facebook.com/UniComplutense" ><img alt="facebook" src="./img/facebook-icon.png" /></span>
+					<span class="twitter"> <a href="http://twitter.com/unicomplutense"><img alt="twitter" src="./img/twitter-icon.png"/></span>
+				</nav>
+			
+			</div>
+		</div> 
+	</body>
+</html>
+

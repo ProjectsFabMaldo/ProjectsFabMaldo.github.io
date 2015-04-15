@@ -1,0 +1,39 @@
+	#titulo {
+	    text-align: center;
+	}
+	#sportsImage1 {
+	    text-align: center;
+	    position: relative;
+	    display: inline-block;
+	    line-height: 27px;
+	    border-width: 10px;
+	    border-color: #85A3FF;
+	    border-style: inset;
+	    margin: 3em;
+	    margin-left: 5em;
+	    margin-right: 5em;
+	}
+	#sportsImage2 {
+	    text-align: center;
+	    position: relative;
+	    display: inline-block;
+	    line-height: 27px;
+	    border-width: 10px;
+	    border-color: #85A3FF;
+	    border-style: inset;
+	    margin: 3em;
+	    margin-left: 5em;
+	    margin-right: 5em;
+	}
+	#sportsImage3 {
+	    text-align: center;
+	    position: relative;
+	    display: inline-block;
+	    line-height: 27px;
+	    border-width: 10px;
+	    border-color: #85A3FF;
+	    border-style: inset;
+	    margin: 3em;
+	    margin-left: 5em;
+	    margin-right: 5em;
+	}

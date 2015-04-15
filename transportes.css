@@ -1,0 +1,178 @@
+
+/*Clase para situar la ruta de links (inicio > Eventos y noticias...) de la caja #contenido y su titular*/
+.ruta a.actual{
+	color:black;
+}
+
+.ruta a{
+	 text-decoration:none;
+	 color:blue;
+}
+
+
+h2{
+	padding-left:100px;
+}
+
+/*Usados en gestionTransportes.html y en misAnuncios.html*/
+
+#anuncios{
+	float:left;
+}
+#anunciosDisponibles{
+	padding-left:50px;
+	float:left;
+}
+#anunciosDisponibles select{
+	float:center;
+	height:200px;
+	width:400px;
+	text-align:left;
+}
+
+
+button{
+	width:120px;
+	height:40px;
+	background-color:#85A3FF;
+	border:blue 1px solid;
+	margin:20px;
+}
+
+#botones{
+	float:right;
+	position:relative;
+	text-align:center;
+	padding-left:50px;
+}
+#botonAlto button{
+	float:top;
+}
+#botonBajo button{
+	float:center;
+}
+/*Usados en consulta.html*/
+#plazas{
+	float:top;
+	padding:10px 10px;
+	padding-left:20px;
+}
+
+#viajeDetallado{
+	float:center;
+	padding-left:50px;
+}
+#viajeDetallado img{
+	height:300px;
+	width:600px;
+	padding-left:50px;
+}
+
+#viajeDetalladoTop{
+	float:top;
+	padding: 10px 10px;
+}
+
+p1{
+	float:left
+	padding: 10px 10px;
+	text-align:left;
+}
+								
+p2{
+	float:center;
+	padding: 10px 10px;
+	text-align:right;
+}
+		
+#viajeDetalladoCenter{
+	float:center;
+	padding: 10px 10px;
+}
+	
+#viajeDetalladoCenter2{
+	float:center;
+	padding: 10px 10px;
+}
+#infoViajeDetallado{
+	float:left;
+}
+#infoViajeDetalladoRight{
+	float:left;
+	position:relative;
+	text-align:center;
+}
+
+#viajeDetalladoPie{
+	float:both;
+	padding: 10px 10px;
+}
+
+pSubrayado{
+	float:both;
+	text-decoration:underline;
+}
+
+#detallesViaje{
+	float:both;
+	padding:10px;
+}								
+								
+
+/*Mapa usado en anuncios.html y consultas.html*/								
+#map{
+	float:left;
+	height:330px;
+	width:230px;
+}
+
+
+/*Usados en anuncios.html para organizar el posicionamiento de la información de un formulario*/
+
+pForm{
+	 font-weight: bold;
+}
+p1{
+	float:left
+	padding: 10px 10px;
+}
+								
+p2{
+	float:center;
+	padding: 10px 10px;
+}
+
+#InfoAnuncioTop{
+	float:top;
+	position:relative;
+}
+#InfoAnuncioCenter{
+	float:center;
+	position:relative;
+}
+#InfoAnuncioPlazas{
+	float:center;
+	position:relative;
+}
+#InfoAnuncioBoth{
+	float:both;
+	position:relative;
+}
+
+/*para calendarios.html*/
+#periodoExamen{
+	float:center;
+	padding-left:50px;
+}
+
+#periodoExamen select{
+	float:right;
+	text-align:center;
+}
+#periodoExamen img{
+	
+	text-align:center;
+	width:600;
+	height:300;
+}
+

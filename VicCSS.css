@@ -1,0 +1,125 @@
+#contenido{
+		padding:10px;
+		min-height:400px;
+		width:950px;
+		background-color:#ffffff;
+		float:left;
+	
+}		          
+
+			.quienes_somos{
+			float:left;
+			border: solid 3px;
+			padding: 3px;
+			border-color:#000000;
+			margin:5px 5px 5px 5px;
+			width:900px;
+			text-align:justify;
+			background-color:#CEB9EF;
+			
+			}
+			
+			.texto_centrado{
+				font-size: 30px;
+				color: black;
+				text-align: center;
+			}
+			
+			.texto_tabulado{
+				
+				margin-left:80px;
+				
+			}
+			
+			
+
+			.fotoMenuPrincipal{
+				/* float: right;
+				position: right;
+				top:425px;
+				left: -40px; */
+	            /* margin-top: 20px;
+	            margin-left: 200px; */
+				 /*border-width: 1px;
+                border-color: black;
+                border-style: solid;*/
+				margin: 0 auto 0 auto;
+				height: 300px;
+				width: 700px;
+				text-align: center;
+               
+               
+            }
+			
+			.fotoReunion{
+					float:right;
+					margin:35px 35px 35px 35px;
+					text-align:justify;
+					background-color:white;
+	}
+	
+				.fotoReunion img{
+				border: solid 4px;
+				border-color:#5322D8;
+				float:center;
+				width: 400px;
+				margin-right: 30px;
+				padding: 0px;
+}
+
+	.ProyDescripcion{
+		float:left;
+		border: solid 3px;
+		padding: 3px;
+		border-color:#000000;
+		margin:5px 5px 5px 5px;
+		width:650px;
+		text-align:justify;
+		background-color:#ffffff;
+			}
+					
+					
+	.ProyBotones{
+		float:right;
+		margin:5px 5px 5px 5px;
+		text-align:justify;
+		background-color:white;
+		width:200px;
+	}
+	
+	.ProyBotones img{
+		border: solid 1px;
+		border-color:#ffffff;
+		float:center;
+		width: 150px;
+		margin:30px;		
+		padding: 0px;
+}
+
+	.DescripcionMiembros{
+		float:left;
+		border: solid 3px;
+		padding: 3px;
+		border-color:#000000;
+		margin:5px 5px 5px 5px;
+		width:250px;
+		text-align:justify;
+		background-color:#ffffff;
+	}
+	
+	.DisponibilidadYboton{
+		float:left;
+		margin-left:90px;
+		text-align:justify;
+		background-color:white;
+		width:400px;
+	}
+	
+	.DisponibilidadYboton img{
+		border: solid 1px;
+		border-color:#ffffff;
+		float:right;
+		width: 150px;
+		margin:30px;		
+		padding: 0px;
+}
